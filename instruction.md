@@ -34,3 +34,17 @@
 # Добавим как добовлять картинки в Markdown
 Это картинка
 ![Картинка](rrrr.jpeg)
+
+# Это репозиторий для запроса на извлечение информации
+## Первые шаги
+Делаем форк репозитория, в котором хотим сделать запрос на извлечение. Ищем кнопку Форк на странице репозитория https://git@github.com:gulden-geekbrains/version_control.git
+Выполняем команду клонирования из своей вилки-копии
+git clone git@github.com:*YOURE_GITHUB*/version_control.git
+Создаем новую ветку и вносим необходимые изменения в файл.
+git checkout -b updatereadme
+vim README.md
+git add README.md
+git commit -m "Добавили инструкцию как создать pull request"
+Делаем толчок
+git push --set-upstream origin updatereadme
+Переходим на свою страницу репозитория. Выбираем ветку updatereadme и жмем кнопку «Сравнить и запросить вытягивание»
